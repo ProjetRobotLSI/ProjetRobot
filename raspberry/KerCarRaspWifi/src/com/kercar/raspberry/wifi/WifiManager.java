@@ -32,7 +32,6 @@ public class WifiManager {
 	
 	private static String tomPath = "";
 	
-	
 	private WifiManager() {
 		loadProperties();
 	}

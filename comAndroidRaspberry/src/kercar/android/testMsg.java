@@ -4,7 +4,6 @@ import kercar.comAPI.CMDMoveMessage;
 import kercar.comAPI.CMDStopMessage;
 
 public class testMsg {
-
 	
 	public static void main(String[] args){
 		
@@ -19,7 +18,6 @@ public class testMsg {
 			com.envoyerMessage(cmdCommand);
 			System.out.println(com.lireReponse());
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
