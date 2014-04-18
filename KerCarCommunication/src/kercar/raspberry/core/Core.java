@@ -124,10 +124,11 @@ public class Core extends Thread implements IIA, SerialListener {
 					this.stopKercar();
 					if(this.pathfinder.isLastPoint() ) {
 						this.stopMission();
+						EnvoieMail.sendMail();
 						first = true;
 						if(takePhoto) {
 							JapaneseTourist.takePhoto();
-							JapaneseTourist.sendPhotos();
+							JapaneseTourist.sendPhotos();							
 						}
 					} else {					
 			//			this.pathfinder.goToNextPoint(1,1, 10);
