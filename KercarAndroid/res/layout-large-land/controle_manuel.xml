@@ -44,12 +44,22 @@
         android:layout_centerVertical="true"/>
 
      <Button
-         android:id="@+id/buttonPhoto"
-         android:layout_width="100dp"
-         android:layout_height="100dp"
-         android:background="@drawable/buttonphoto"
-         android:layout_marginTop="30dp"
-         android:layout_marginLeft="50dp" />
+         android:id="@+id/buttonVideo"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_marginTop="100dp"
+         android:layout_alignLeft="@+id/buttonPhoto"
+         android:background="@drawable/buttonphoto" />
+
+ 	<Button
+     	android:id="@+id/buttonPhoto"
+     	android:layout_width="50dp"
+     	android:layout_height="50dp"
+     	android:layout_alignParentRight="true"
+     	android:layout_alignTop="@+id/OSM"
+     	android:layout_marginRight="18dp"
+     	android:background="@drawable/buttonphoto" />
+
 
      <SeekBar
          android:id="@+id/barVitesse"

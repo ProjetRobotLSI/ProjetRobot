@@ -44,13 +44,13 @@
         android:enabled="false"/>
 
      <Button
-         android:id="@+id/buttonPhoto"
-         android:layout_width="150dp"
-         android:layout_height="150dp"
-         android:background="@drawable/buttonphoto"
-         android:layout_alignBaseline="@+id/buttonDroite"
-         android:layout_alignParentRight="true"
-         android:layout_marginRight="30dp" />
+     	android:id="@+id/buttonPhoto"
+     	android:layout_width="50dp"
+     	android:layout_height="50dp"
+     	android:layout_alignParentRight="true"
+     	android:layout_alignTop="@+id/buttonAvance"
+     	android:layout_marginRight="18dp"
+     	android:background="@drawable/buttonphoto" />
      
      <SeekBar
          android:id="@+id/barVitesse"
@@ -58,5 +58,14 @@
          android:layout_height="wrap_content"
          android:layout_centerHorizontal="true"
          android:layout_marginTop="650dp"/>
+     
+     <Button
+     	android:id="@+id/buttonVideo"
+     	android:layout_width="50dp"
+     	android:layout_height="50dp"
+     	android:layout_alignBaseline="@+id/buttonRecule"
+     	android:layout_alignBottom="@+id/buttonRecule"
+     	android:layout_alignLeft="@+id/buttonPhoto"
+     	android:background="@drawable/buttonphoto" />
 
 </RelativeLayout>
