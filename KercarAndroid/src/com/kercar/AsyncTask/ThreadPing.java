@@ -20,7 +20,7 @@ public class ThreadPing extends Thread{
 		this.context = context;
 		this.activity = activity;
 	}
-/*	
+	
 	@Override
 	public void run() {
 		while(true){
@@ -43,5 +43,4 @@ public class ThreadPing extends Thread{
 			}
 		}
 	}
-*/
 }

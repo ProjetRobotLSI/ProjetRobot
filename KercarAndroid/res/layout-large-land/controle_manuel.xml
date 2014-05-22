@@ -35,39 +35,40 @@
         android:layout_below="@id/buttonAvance"
         android:layout_toLeftOf="@id/buttonRecule"
         android:background="@drawable/fleche_gauche"/>
-    
+
      <com.kercar.osmandroid.OSMAndroid
-        android:id="@+id/OSM"
-        android:layout_width="400dp"
-        android:layout_height="fill_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
-
-     <Button
-         android:id="@+id/buttonVideo"
-         android:layout_width="50dp"
-         android:layout_height="50dp"
-         android:layout_marginTop="100dp"
-         android:layout_alignLeft="@+id/buttonPhoto"
-         android:background="@drawable/buttonphoto" />
-
- 	<Button
-     	android:id="@+id/buttonPhoto"
-     	android:layout_width="50dp"
-     	android:layout_height="50dp"
-     	android:layout_alignParentRight="true"
-     	android:layout_alignTop="@+id/OSM"
-     	android:layout_marginRight="18dp"
-     	android:background="@drawable/buttonphoto" />
-
+         android:id="@+id/OSM"
+         android:layout_width="550dp"
+         android:layout_height="fill_parent"
+         android:layout_above="@+id/buttonRecule"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="56dp" >
+     </com.kercar.osmandroid.OSMAndroid>
 
      <SeekBar
          android:id="@+id/barVitesse"
-         android:layout_width="350dp"
+         android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:layout_centerVertical="true"
-         android:layout_alignParentRight="true"
-         android:layout_marginRight="-80dp"
-         android:rotation="270" />
+         android:layout_alignBottom="@+id/buttonRecule"
+         android:layout_alignLeft="@+id/OSM"
+         android:layout_alignRight="@+id/OSM" />
+
+     <Button
+         android:id="@+id/buttonPhoto"
+         android:layout_width="75dp"
+         android:layout_height="75dp"
+         android:layout_alignLeft="@+id/buttonVideo"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="24dp"
+         android:background="@drawable/buttonphoto" />
+
+     <Button
+         android:id="@+id/buttonVideo"
+         android:layout_width="75dp"
+         android:layout_height="75dp"
+         android:layout_alignBaseline="@+id/OSM"
+         android:layout_alignBottom="@+id/OSM"
+         android:layout_toRightOf="@+id/buttonGauche"
+         android:background="@drawable/buttonvideo" />
 
 </RelativeLayout>
