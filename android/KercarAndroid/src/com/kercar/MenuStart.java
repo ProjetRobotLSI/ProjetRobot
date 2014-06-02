@@ -35,7 +35,7 @@ public class MenuStart extends Activity{
 		//Initialisation des attributs
 		start = (Button)findViewById(R.id.buttonStart);
 		about = (Button)findViewById(R.id.buttonAbout);
-		url = "http://kercar2013.no-ip.biz:8080/KerCarCommunication/";
+		url = "http://"+IP.ip+":8080/KerCarCommunication/";
 		
 		//ComManager
 		com = ComAndroid.getManager();

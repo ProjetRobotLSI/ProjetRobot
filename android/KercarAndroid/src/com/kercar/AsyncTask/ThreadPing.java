@@ -37,7 +37,7 @@ public class ThreadPing extends Thread{
 				});
 			}
 			try {
-				sleep(3000);
+				sleep(5000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
